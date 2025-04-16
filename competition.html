@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Irfan Ali - Content Creation Portfolio showcasing videos, copywriting, and social media management"
+    />
+    <title>Content Creation | Irfan Ali</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+      /* Inherit main styles from index.html */
+      :root {
+        --primary: #f39c12;
+        --secondary: #2c3e50;
+        --dark: #1a1a1a;
+        --light: #f8f9fa;
+        --transition: all 0.3s ease;
+      }
+
+      html {
+        box-sizing: border-box;
+        font-size: 16px;
+        scroll-behavior: smooth;
+      }
+
+      *,
+      *:before,
+      *:after {
+        box-sizing: inherit;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI', system-ui, sans-serif;
+        line-height: 1.6;
+        color: var(--light);
+        background: var(--dark);
+        overflow-x: hidden;
+      }
+
+      /* Header */
+      header {
+        background-color: rgba(20, 31, 31, 0.95);
+        padding: 1rem;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+      }
+
+      nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: var(--light);
+        font-size: 1.1rem;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        transition: var(--transition);
+        position: relative;
+      }
+
+      nav a::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background: var(--primary);
+        transition: var(--transition);
+      }
+
+      nav a:hover::after {
+        width: 100%;
+      }
+
+      /* Content Page Specific Styles */
+      .page-header {
+        text-align: center;
+        padding: 6rem 2rem 2rem;
+        background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('content-bg.jpg');
+        background-size: cover;
+        background-position: center;
+      }
+
+      .page-header h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+      }
+
+      .section {
+        padding: 5rem 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .content-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        margin-top: 2rem;
+      }
+
+      .content-item {
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 10px;
+        overflow: hidden;
+        transition: var(--transition);
+      }
+
+      .content-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+      }
+
+      .content-item img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .content-details {
+        padding: 1.5rem;
+      }
+
+      .btn {
+        background: var(--primary);
+        color: var(--light);
+        padding: 0.8rem 2rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: var(--transition);
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        text-decoration: none;
+      }
+
+      .btn:hover {
+        background: #e67e22;
+        transform: translateY(-2px);
+      }
+
+      .back-btn {
+        position: fixed;
+        bottom: 2rem;
+        right: 2rem;
+        background: var(--primary);
+        color: var(--light);
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        transition: var(--transition);
+      }
+
+      .back-btn:hover {
+        transform: translateY(-5px);
+      }
+
+      footer {
+        text-align: center;
+        padding: 2rem;
+        background: rgba(0,0,0,0.3);
+      }
+
+      @media (max-width: 768px) {
+        .section {
+          padding: 3rem 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html#about">Home</a></li>
+          <li><a href="competition.html#skills">Skills</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <!--li><a href="index.html#experience">Experience</a></li-->
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-header">
+        <h1>Competition</h1>
+        <p>Showcasing my work in competition</p>
+      </section>
+
+      <section class="section">
+        <h2>Data Challenge 4.0</h2>
+        <div class="content-grid">
+          <div class="content-item">
+            <img src="video1.jpg" alt="Video Data Challenge">
+            <div class="content-details">
+              <h3>Poster</h3>
+              <p>This infographic poster meant for us to have climate awareness </p>
+              <a href="#" class="btn"><i class="fas fa-play"></i> See Poster</a>
+            </div>
+          </div>
+          <div class="content-item">
+            <img src="video2.jpg" alt="Video Project 2">
+            <div class="content-details">
+              <h3>Slide Presentation</h3>
+              <p>Presentation of our project.</p>
+              <a href="#" class="btn"><i class="fas fa-play"></i> See Slide</a>
+            </div>
+          </div>
+          <div class="content-item">
+            <img src="dashboard.jpg" alt="dashboard not put yet">
+            <div class="content-details">
+              <h3>Dashboard</h3>
+              <p>Our dashboard</p>
+              <a href="https://kaisel-2.vercel.app/" class="btn"><i class="fas fa-play"></i> See Slide</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Not yet</h2>
+        <div class="content-grid">
+          <div class="content-item">
+            <img src="copy1.jpg" alt="Copywriting Project 1">
+            <div class="content-details">
+              <h3>Blog Articles</h3>
+              <p>Informative and engaging articles on various topics.</p>
+              <a href="#" class="btn"><i class="fas fa-file-alt"></i> Read Sample</a>
+            </div>
+          </div>
+          <div class="content-item">
+            <img src="copy2.jpg" alt="Copywriting Project 2">
+            <div class="content-details">
+              <h3>Marketing Copy</h3>
+              <p>Persuasive copy for marketing campaigns and product descriptions.</p>
+              <a href="#" class="btn"><i class="fas fa-file-alt"></i> Read Sample</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Not yet</h2>
+        <div class="content-grid">
+          <div class="content-item">
+            <img src="social1.jpg" alt="Social Media Project 1">
+            <div class="content-details">
+              <h3>Campaign Strategy</h3>
+              <p>Comprehensive social media strategies for brand growth.</p>
+              <a href="#" class="btn"><i class="fas fa-chart-line"></i> View Case Study</a>
+            </div>
+          </div>
+          <div class="content-item">
+            <img src="social2.jpg" alt="Social Media Project 2">
+            <div class="content-details">
+              <h3>Content Calendar</h3>
+              <p>Strategic content planning and scheduling for consistent engagement.</p>
+              <a href="#" class="btn"><i class="fas fa-calendar-alt"></i> View Example</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <a href="index.html" class="back-btn" aria-label="Back to Home">
+      <i class="fas fa-home"></i>
+    </a>
+
+    <footer>
+      <p>© 2025 Irfan Ali Nazri</p>
+    </footer>
+  </body>
+</html>
