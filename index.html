@@ -3,20 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="Portfolio" content="Syarifah Aisyah" />
-    <title>Syarifah Aisyah | Writer & Poet</title>
+    <meta name="description" content="The Wailing of the River - An Environmental Data & Poetic Awakening by Syarifah Aisyah" />
+    <title>The Wailing of the River | Syarifah Aisyah</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <!-- Loading Screen -->
+    <div class="loader">
+      <div class="leaf-spinner">
+        <i class="fas fa-leaf fa-3x" style="color: #228B22;"></i>
+      </div>
+    </div>
+
     <header>
       <nav>
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#writing">Writing</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#poem">The Poem</a></li>
+          <li><a href="#dashboard">Data</a></li>
+          <li><a href="#sustainability">Action</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -25,176 +33,183 @@
     <main>
       <!-- Hero Section -->
       <section class="hero" id="home">
-        <h1>Syarifah Aisyah</h1>
-        <p class="subtitle">Writer • Poet • Thinker</p>
-        <a href="#writing" class="btn">Explore My Writing</a>
+        <h1>The Wailing of the River</h1>
+        <p class="subtitle">An Environmental Data & Poetic Awakening</p>
+        <a href="#dashboard" class="btn">Explore the Data</a>
       </section>
 
       <!-- About Section -->
       <section class="section" id="about">
         <div class="section-header">
-          <h2>About Me</h2>
+          <h2>About the Project</h2>
         </div>
         <div class="about-content">
           <div class="about-image">
-            <img src="profile.jpg" alt="Syarifah Aisyah" class="profile-image">
+            <img src="river-image.jpg" alt="River landscape" class="profile-image">
           </div>
           <div class="about-text">
-            <p>Hello, I'm Syarifah Aisyah. I weave words into tapestries of thought, capturing the ephemeral beauty of life through poetry and prose.</p>
-            <p>With a heart attuned to the whispers of the world and a mind that seeks wisdom in everyday moments, I transform observations into reflections that resonate with the human experience.</p>
-            <p>My writing explores themes of nature, identity, love, and the quiet moments that often go unnoticed but hold profound meaning.</p>
+            <p>This project combines poetry with environmental data to tell the story of our rivers and their struggle against pollution and exploitation.</p>
+            <p>Through the lens of poetic expression and scientific analysis, we explore the impact of human activity on these vital waterways and the ecosystems they support.</p>
+            <p>Created by Syarifah Aisyah with support from environmental researchers and powered by DeepSeek AI for data analysis.</p>
             <div class="quote">
-              "Words are the vessels that carry our souls across the ocean of human experience."
+              "The river's voice speaks of both beauty and suffering - we must learn to listen."
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Writing Section -->
-      <section class="section" id="writing">
+      <!-- Poem Section -->
+      <section class="poem-section" id="poem">
+        <div class="poem">
+          <h3>The Wailing of the River</h3>
+          <p style="--i:1">I am the river, ancient and wise,<br>
+          Flowing through valleys under endless skies.<br>
+          My waters once clear as morning light,<br>
+          Now clouded with the remnants of human might.</p>
+          
+          <p style="--i:2">I carry your stories, your waste, your dreams,<br>
+          Plastic and poison now flow in my streams.<br>
+          Fish that once danced in my gentle embrace<br>
+          Struggle for breath in this altered space.</p>
+          
+          <p style="--i:3">The trees on my banks, once proud and tall,<br>
+          Fall to the sound of progress's call.<br>
+          Their roots no longer hold my edges tight,<br>
+          And my banks erode further with each stormy night.</p>
+          
+          <p style="--i:4">Listen closely to my mournful song,<br>
+          A plea for change before too long.<br>
+          For I am the lifeblood of this land you see,<br>
+          And my fate is entwined with humanity.</p>
+          
+          <p style="--i:5">Could you change your ways, could you hear my cry?<br>
+          Before my waters completely run dry?<br>
+          In your hands lies the power to heal,<br>
+          To restore the balance we all should feel.</p>
+        </div>
+      </section>
+
+      <!-- Dashboard Section -->
+      <section class="dashboard-section section" id="dashboard">
         <div class="section-header">
-          <h2>My Writing</h2>
+          <h2>Environmental Data</h2>
         </div>
         
-        <div class="writing-tabs">
-          <button class="tab-btn active" data-tab="poetry">Poetry</button>
-          <button class="tab-btn" data-tab="essays">Essays</button>
-          <button class="tab-btn" data-tab="stories">Short Stories</button>
+        <div class="dashboard-tabs">
+          <button class="tab-btn active" data-tab="pollution">Water Pollution</button>
+          <button class="tab-btn" data-tab="deforestation">Deforestation</button>
+          <button class="tab-btn" data-tab="biodiversity">Biodiversity Loss</button>
         </div>
         
-        <div class="tab-content">
-          <!-- Poetry Tab -->
-          <div class="tab-pane active" id="poetry">
-            <div class="poem">
-              <h3>Whispers of Dawn</h3>
-              <p>Morning light filters through<br>
-              Gossamer curtains of dew,<br>
-              Each droplet a universe<br>
-              Reflecting possibilities anew.</p>
-              
-              <p>I stand at the threshold<br>
-              Between night's retreat and day's advance,<br>
-              Gathering courage in handfuls,<br>
-              To face the world's uncertain dance.</p>
+        <div class="dashboard-container">
+          <div class="tab-content">
+            <!-- Pollution Tab -->
+            <div class="tab-pane active" id="pollution">
+              <div class="chart-container">
+                <img src="pollution-chart.jpg" alt="Water Pollution Data Chart" style="width:100%; height:100%; object-fit:contain;">
+              </div>
+              <div class="insights-panel">
+                <h4><i class="fas fa-lightbulb"></i> AI Insights</h4>
+                <p>Analysis shows a 47% increase in chemical pollutants over the past decade, with industrial waste being the primary contributor. Seasonal patterns indicate higher concentration during dry months when water levels are lower.</p>
+              </div>
             </div>
             
-            <div class="poem">
-              <h3>Solitude's Embrace</h3>
-              <p>In quiet corners of my mind<br>
-              I find the peace that time denied,<br>
-              A sanctuary built of thought<br>
-              Where wisdom waits to be untied.</p>
-              
-              <p>The world may rush in torrents wild,<br>
-              But here, in silence reconciled,<br>
-              I learn the language of my soul<br>
-              And hear the universe's child.</p>
+            <!-- Deforestation Tab -->
+            <div class="tab-pane" id="deforestation">
+              <div class="chart-container">
+                <img src="deforestation-chart.jpg" alt="Deforestation Data Chart" style="width:100%; height:100%; object-fit:contain;">
+              </div>
+              <div class="insights-panel">
+                <h4><i class="fas fa-lightbulb"></i> AI Insights</h4>
+                <p>Riparian forest cover has decreased by 38% in the watershed area, leading to increased soil erosion and river sedimentation. The rate of deforestation has accelerated in the past five years due to agricultural expansion.</p>
+              </div>
             </div>
-          </div>
-          
-          <!-- Essays Tab -->
-          <div class="tab-pane" id="essays">
-            <article class="essay">
-              <h3>The Art of Mindful Observation</h3>
-              <p class="essay-meta">Published in Literary Journal, 2023</p>
-              <div class="essay-excerpt">
-                <p>In our haste to move forward, we often forget the profound wisdom that comes from simply standing still. Mindful observation—the practice of fully engaging with our surroundings without judgment—offers a pathway to deeper understanding that our fast-paced world rarely encourages...</p>
-                <a href="#" class="read-more">Continue Reading</a>
-              </div>
-            </article>
             
-            <article class="essay">
-              <h3>Between Worlds: The Liminal Space of Creative Thought</h3>
-              <p class="essay-meta">Personal Collection, 2022</p>
-              <div class="essay-excerpt">
-                <p>Creativity thrives in the in-between spaces—those moments of transition where we are neither here nor there, but somewhere in the liminal threshold that connects disparate realms of thought. It is in this space that innovation finds its spark...</p>
-                <a href="#" class="read-more">Continue Reading</a>
+            <!-- Biodiversity Tab -->
+            <div class="tab-pane" id="biodiversity">
+              <div class="chart-container">
+                <img src="biodiversity-chart.jpg" alt="Biodiversity Loss Data Chart" style="width:100%; height:100%; object-fit:contain;">
               </div>
-            </article>
-          </div>
-          
-          <!-- Stories Tab -->
-          <div class="tab-pane" id="stories">
-            <article class="story">
-              <h3>The Keeper of Forgotten Things</h3>
-              <p class="story-meta">Short Fiction, 2023</p>
-              <div class="story-excerpt">
-                <p>Mrs. Eliza Thorne collected things that others had left behind. Not valuable things—not usually, anyway—but the small, seemingly insignificant items that fell from pockets or were abandoned on park benches. A single glove. A ticket stub. A child's drawing, folded and refolded until the creases threatened to tear the paper apart...</p>
-                <a href="#" class="read-more">Read Full Story</a>
+              <div class="insights-panel">
+                <h4><i class="fas fa-lightbulb"></i> AI Insights</h4>
+                <p>Native fish species have declined by 23% since 2010, with three species now locally extinct. Invertebrate diversity shows similar patterns, with pollution-tolerant species becoming dominant in affected areas.</p>
               </div>
-            </article>
-            
-            <article class="story">
-              <h3>The Yellow Door</h3>
-              <p class="story-meta">Flash Fiction, 2022</p>
-              <div class="story-excerpt">
-                <p>Everyone in the village knew not to approach the yellow door. It stood alone at the edge of the forest, attached to no building, framed only by air and possibility. Children were warned from infancy, "Never touch the yellow door." But no one ever explained why...</p>
-                <a href="#" class="read-more">Read Full Story</a>
-              </div>
-            </article>
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- Portfolio Section -->
-      <section class="section" id="portfolio">
+      <!-- Sustainability Section -->
+      <section class="sustainability-section section" id="sustainability">
         <div class="section-header">
-          <h2>Portfolio</h2>
+          <h2>Could We Change?</h2>
         </div>
 
-        <div class="portfolio-grid">
-          <!-- Published Work -->
-          <article class="portfolio-item">
-            <img src="book-cover.jpg" alt="Book Cover">
-            <div class="portfolio-content">
-              <h3>Collected Poems</h3>
-              <p>A compilation of my most cherished poems exploring themes of nature, identity, and human connection.</p>
-              <a href="#" class="btn"><i class="fas fa-book-open"></i> View Details</a>
+        <div class="sustainability-grid">
+          <!-- Reforestation -->
+          <div class="sustainability-card">
+            <img src="reforestation.jpg" alt="Reforestation Project">
+            <div class="card-content">
+              <h3>Riparian Reforestation</h3>
+              <p>Restoring native trees along riverbanks to prevent erosion and filter runoff.</p>
+              <div class="qr-code">
+                <img src="reforestation-qr.jpg" alt="QR Code for Reforestation Project">
+              </div>
+              <a href="#" class="btn"><i class="fas fa-seedling"></i> Join Project</a>
             </div>
-          </article>
+          </div>
 
-          <!-- Literary Magazine -->
-          <article class="portfolio-item">
-            <img src="magazine.jpg" alt="Literary Magazine">
-            <div class="portfolio-content">
-              <h3>Literary Contributions</h3>
-              <p>Featured essays and poems in various literary magazines and online publications.</p>
-              <a href="#" class="btn"><i class="fas fa-book-open"></i> View Publications</a>
+          <!-- Water Monitoring -->
+          <div class="sustainability-card">
+            <img src="water-monitoring.jpg" alt="Water Monitoring">
+            <div class="card-content">
+              <h3>Citizen Science</h3>
+              <p>Community-based water quality monitoring programs to track pollution levels.</p>
+              <div class="qr-code">
+                <img src="monitoring-qr.jpg" alt="QR Code for Water Monitoring">
+              </div>
+              <a href="#" class="btn"><i class="fas fa-vial"></i> Volunteer</a>
             </div>
-          </article>
+          </div>
 
-          <!-- Writing Workshop -->
-          <article class="portfolio-item">
-            <img src="workshop.jpg" alt="Writing Workshop">
-            <div class="portfolio-content">
-              <h3>Writing Workshops</h3>
-              <p>Facilitated creative writing workshops focusing on poetic expression and narrative development.</p>
-              <a href="#" class="btn"><i class="fas fa-book-open"></i> Learn More</a>
+          <!-- Sustainable Agriculture -->
+          <div class="sustainability-card">
+            <img src="sustainable-agriculture.jpg" alt="Sustainable Agriculture">
+            <div class="card-content">
+              <h3>Sustainable Farming</h3>
+              <p>Promoting agricultural practices that reduce chemical runoff into waterways.</p>
+              <div class="qr-code">
+                <img src="agriculture-qr.jpg" alt="QR Code for Sustainable Agriculture">
+              </div>
+              <a href="#" class="btn"><i class="fas fa-leaf"></i> Learn More</a>
             </div>
-          </article>
+          </div>
 
-          <!-- Blog -->
-          <article class="portfolio-item">
-            <img src="blog.jpg" alt="Blog">
-            <div class="portfolio-content">
-              <h3>Reflections Blog</h3>
-              <p>A collection of personal essays and reflections on literature, art, and the writing process.</p>
-              <a href="#" class="btn"><i class="fas fa-book-open"></i> Visit Blog</a>
+          <!-- Waste Reduction -->
+          <div class="sustainability-card">
+            <img src="waste-reduction.jpg" alt="Waste Reduction">
+            <div class="card-content">
+              <h3>Plastic-Free Rivers</h3>
+              <p>Initiatives to reduce plastic waste and organize river cleanup events.</p>
+              <div class="qr-code">
+                <img src="waste-qr.jpg" alt="QR Code for Waste Reduction">
+              </div>
+              <a href="#" class="btn"><i class="fas fa-trash-alt"></i> Participate</a>
             </div>
-          </article>
+          </div>
         </div>
       </section>
 
       <!-- Contact Section -->
       <section class="section" id="contact">
         <div class="section-header">
-          <h2>Connect With Me</h2>
+          <h2>Connect With Us</h2>
         </div>
 
         <div class="contact-container">
           <div class="contact-info">
-            <h3>Let's Connect</h3>
-            <p><i class="fas fa-envelope"></i> syarifah.aisyah@example.com</p>
+            <h3>Get Involved</h3>
+            <p><i class="fas fa-envelope"></i> river.project@example.com</p>
             <p><i class="fas fa-map-marker-alt"></i> Kuala Lumpur, Malaysia</p>
             <div class="social-links">
               <a href="#" aria-label="Instagram">
@@ -212,7 +227,7 @@
           <form class="contact-form">
             <input type="text" placeholder="Name" required>
             <input type="email" placeholder="Email" required>
-            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <textarea rows="5" placeholder="How would you like to contribute?" required></textarea>
             <button type="submit" class="btn">
               <i class="fas fa-paper-plane"></i> Send Message
             </button>
@@ -221,22 +236,79 @@
       </section>
     </main>
 
+    <!-- AI Assistant -->
+    <div class="ai-assistant">
+      <div class="ai-toggle">
+        <i class="fas fa-robot"></i>
+      </div>
+      <div class="ai-panel">
+        <div class="ai-header">
+          <img src="ai-avatar.jpg" alt="AI Assistant">
+          <h4>River Data Assistant</h4>
+        </div>
+        <div class="ai-messages">
+          <div class="message ai-message">
+            Hello! I can help you understand the environmental data. What would you like to know?
+          </div>
+        </div>
+        <div class="ai-input">
+          <input type="text" placeholder="Ask about the data...">
+          <button><i class="fas fa-paper-plane"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+      <i class="fas fa-sun"></i>
+    </div>
+
     <footer>
-      <p>© 2025 Syarifah Aisyah | All Rights Reserved</p>
-      <p class="footer-quote">"In words, we find our truest selves."</p>
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>About</h3>
+          <p>The Wailing of the River is an environmental awareness project combining poetry, data visualization, and community action.</p>
+        </div>
+        <div class="footer-column">
+          <h3>Contributors</h3>
+          <p>Syarifah Aisyah - Poetry & Concept</p>
+          <p>Irfan Ali Nazri - Development</p>
+          <p>DeepSeek AI - Data Analysis</p>
+        </div>
+        <div class="footer-column">
+          <h3>Connect</h3>
+          <div class="social-links">
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 The Wailing of the River Project | All Rights Reserved</p>
+        <p class="footer-quote">"In nature's voice, we find our path forward."</p>
+      </div>
     </footer>
 
     <script>
-      // Tab functionality for writing section
+      // Loading screen
+      window.addEventListener('load', function() {
+        setTimeout(function() {
+          document.querySelector('.loader').classList.add('hidden');
+        }, 1500);
+      });
+      
+      // Tab functionality for dashboard section
       document.addEventListener('DOMContentLoaded', function() {
-        const tabBtns = document.querySelectorAll('.tab-btn');
-        const tabPanes = document.querySelectorAll('.tab-pane');
+        // Dashboard tabs
+        const dashboardTabs = document.querySelectorAll('.dashboard-tabs .tab-btn');
+        const dashboardPanes = document.querySelectorAll('#dashboard .tab-pane');
         
-        tabBtns.forEach(btn => {
+        dashboardTabs.forEach(btn => {
           btn.addEventListener('click', function() {
             // Remove active class from all buttons and panes
-            tabBtns.forEach(b => b.classList.remove('active'));
-            tabPanes.forEach(p => p.classList.remove('active'));
+            dashboardTabs.forEach(b => b.classList.remove('active'));
+            dashboardPanes.forEach(p => p.classList.remove('active'));
             
             // Add active class to clicked button
             this.classList.add('active');
@@ -245,6 +317,46 @@
             const tabId = this.getAttribute('data-tab');
             document.getElementById(tabId).classList.add('active');
           });
+        });
+        
+        // AI Assistant toggle
+        const aiToggle = document.querySelector('.ai-toggle');
+        const aiPanel = document.querySelector('.ai-panel');
+        
+        aiToggle.addEventListener('click', function() {
+          aiPanel.classList.toggle('active');
+        });
+        
+        // Theme toggle
+        const themeToggle = document.querySelector('.theme-toggle');
+        const htmlElement = document.documentElement;
+        
+        themeToggle.addEventListener('click', function() {
+          htmlElement.classList.toggle('dark-mode');
+          const icon = this.querySelector('i');
+          if (icon.classList.contains('fa-sun')) {
+            icon.classList.remove('fa-sun');
+            icon.classList.add('fa-moon');
+          } else {
+            icon.classList.remove('fa-moon');
+            icon.classList.add('fa-sun');
+          }
+        });
+        
+        // Scroll animations
+        const fadeElements = document.querySelectorAll('.section, .sustainability-card, .poem p');
+        
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              entry.target.classList.add('fade-in');
+            }
+          });
+        }, { threshold: 0.1 });
+        
+        fadeElements.forEach(el => {
+          observer.observe(el);
         });
         
         // Smooth scroll for navigation
